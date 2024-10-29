@@ -5,7 +5,7 @@
 int main() {
     SetConfigFlags(FLAG_WINDOW_RESIZABLE);
     InitWindow(windowWidth, windowHeight, "GAME - 1");
-    Camera camera = (Camera)InitCamera();
+    Camera camera = InitCamera();
     Camera *pcamera = &camera;
     int cameraMode = CAMERA_FIRST_PERSON;
     while (!WindowShouldClose()) {
